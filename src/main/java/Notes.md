@@ -1145,6 +1145,24 @@ But this is not checked by the A thread and so it will keep executing the while 
 
 ## Cap 14
 
+### The java.io concrete I/O stream classes
+
+| Class name             | Low/High level | Description                                                                                               |
+|:-----------------------|:---------------|:----------------------------------------------------------------------------------------------------------|
+| `FileInputStream`      | Low            | Reads file data as bytes                                                                                  |
+| `FileOutputStream`     | Low            | Writes file data as bytes                                                                                 |
+| `FileReader`           | Low            | Reads file data as characters                                                                             |
+| `FileWriter`           | Low            | Writes file data as characters                                                                            |
+| `BufferedInputStream`  | High           | Reads byte data from existing `InputStream` in buffered manner, which improves efficiency and performance |
+| `BufferedOutputStream` | High           | Writes byte data to existing `OutputStream` in buffered manner, which improves efficiency and performance |
+| `BufferedReader`       | High           | Reads character data from existing `Reader` in buffered manner, which improves efficiency and performance |
+| `BufferedWriter`       | High           | Writes character data to existing `Writer` in buffered manner, which improves efficiency and performance  |
+| `ObjectInputStream`    | High           | Deserializes primitive Java datatypes and graphs of Java objects from existing `InputStream`              |
+| `ObjectOutputStream`   | High           | Serializes primitive Java data types and graphs of Java objects to existing `OutputStream`                |
+| `PrintStream`          | High           | Writes formatted representations of Java objects to binary stream                                         |
+| `PrintWriter`          | High           | Writes formatted representations of Java objects to character stream                                      |
+
+
 ### Try-with-resources
 
     Closeable extends AutoCloseable {}

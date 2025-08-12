@@ -23,18 +23,16 @@ proficiency in modern Java programming.
     - Virtual Threads
     - Structured Concurrency
     - Executor Framework
-- **Memory Management & Garbage Collection**
-    - G1, ZGC, and Shenandoah GC
-- **Security and Performance Improvements**
+- **IO operations**
+- **Collection API**
 - **New APIs and Enhancements**
 - **Working with Modules (JPMS)**
-- **Testing and Debugging Best Practices**
 
 ## Getting Started
 
 ### Prerequisites
 
-- Install **Java 21** (JDK 21) from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html)
+- Install **Java 21** (JDK 21) from D[Oracle](https://www.oracle.com/java/technologies/javase-downloads.html)
   or [OpenJDK](https://jdk.java.net/21/).
 - Install a Java IDE such as **IntelliJ IDEA**, **Eclipse**, or **VS Code**.
 - Basic knowledge of Java is recommended.
@@ -50,8 +48,8 @@ proficiency in modern Java programming.
 ## Study material
 
 - Book: OCP Oracle Certified Professional Java SE 21 Developer Study Guide: Exam 1Z0-830 from Jeanne Boyarsky, Scott Selikoff
-
-- Main file from this project: [Notes.md](main/src/main/java/org/bomfim/review/Notes.md)
+- Mock tests from Enthuware: https://enthuware.com/
+- Main file from this project: [Guide.md](src/main/java/Guide.md)
 
 ## Extra info
 
@@ -66,8 +64,12 @@ proficiency in modern Java programming.
 * Forum: https://coderanch.com/c/certification
 * Wiley test mocks: https://login.education.wiley.com/
 * Author's blog: https://www.selikoff.net/ocp21/
-* Gihub With some information: https://github.com/r331/OCP-Oracle-Certified-Professional-Java-SE-21-1Z0-839-Open-Study-Guide/blob/main/src/main/asciidoc/1Z0-829StudyGuide.adoc
 * Java 21 - 6 full tests: https://www.udemy.com/course/ocp-oracle-certified-professional-java-developer-prep/learn/quiz/5686332#overview
+
+### Other's GitHub repository
+
+* GitHub with some information: https://github.com/r331/OCP-Oracle-Certified-Professional-Java-SE-21-1Z0-839-Open-Study-Guide/blob/main/src/main/asciidoc/1Z0-829StudyGuide.adoc
+* GitHub with many exercises: https://github.com/rndtavares/java21-cert
 
 ## Contributing
 
