@@ -8,6 +8,7 @@ public class PracticalQuestions14 {
         System.out.println("PrintStream - Writes formatted representations of Java objects to binary stream");
         System.out.println("PrintWriter - Writes formatted representations of Java objects to character stream");
     }
+
 }
 
 
@@ -100,7 +101,7 @@ class SerializeRecord {
                 String lastName
     ) implements Serializable {
         Test(String name, int age, String lastName) {
-            this.age = age;
+            this.age = age+1;
             this.lastName = lastName;
             this.name = name;
         }

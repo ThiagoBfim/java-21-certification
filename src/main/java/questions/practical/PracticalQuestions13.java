@@ -19,9 +19,7 @@ public class PracticalQuestions13{
 }
 
 
-class
-
-Threads {
+class Threads {
     static ArrayList al = new ArrayList();
 
     public static void main(String[] args) {

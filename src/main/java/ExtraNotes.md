@@ -171,8 +171,20 @@ Records does not allow extends
                 OffsetTime.of(date.toLocalTime(), ZoneOffset.of("-05:00"))
         )); //PT1H
 
-March +1 ->    -04:00
-November -1 -> -05:00
+March +1 ->    -05:00 to -04:00
+
+    System.out.println(Duration.between(
+        OffsetTime.of(date.toLocalTime(), ZoneOffset.of("-04:00")),
+        OffsetTime.of(date.toLocalTime(), ZoneOffset.of("-05:00"))
+    )); //PT1H
+
+
+November -1 -> -04:00 to -05:00
+
+        System.out.println(Duration.between(
+                OffsetTime.of(date.toLocalTime(), ZoneOffset.of("-05:00")),
+                OffsetTime.of(date.toLocalTime(), ZoneOffset.of("-04:00"))
+        )); //PT-1H
 
 ### Optional - Reduce
 
@@ -195,16 +207,13 @@ Module with Service Loader:
 - DOES NOT requires the module that contains the implementation
 - uses the Service Interface module
 
-> The module that uses a service should not even be aware of the module that provides the service. So, requires OrderServiceProvider; is unnecessary but it is technically valid.
+> The module that uses a service should not even be aware of the module that provides the service.
 
-module main {
-    uses org.bomfim.service.AnimalService;
-    requires sub.module; //Module with AnimalServiceImpl NOT REQUIRED, NOT RECOMMENDED
-    requires task; //Module with AnimalService
-}
-
-> Module with Service Loader - requires  - sub module and uses the Service Interface module
-
+    module main {
+        uses org.bomfim.service.AnimalService;
+        requires sub.module; //Module with AnimalServiceImpl NOT REQUIRED, NOT RECOMMENDED
+        requires task; //Module with AnimalService
+    }
 
 If b.jar is not a modular application, these commands will have the following output:
 - jdeps --module-path lib\a.jar; lib\b.jar

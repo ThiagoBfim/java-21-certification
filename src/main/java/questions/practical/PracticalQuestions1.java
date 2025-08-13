@@ -9,6 +9,10 @@ public class PracticalQuestions1 {
 
         int x2 = Integer.parseInt("10", 2);
         System.out.println(x2); //2
+
+        System.out.println(true ^ false);
+        System.out.println(true ^ true);
+        System.out.println(false ^ false);
     }
 }
 
@@ -20,5 +24,13 @@ class BitWise {
         int i3 = i ^ i2;
         System.out.println(i2); //-6
         System.out.println(i3); //-1
+
+        int a = 5;     // 0101
+        int b = 3;     // 0011
+        int result = a & b;  // 0101 0011 - 0001 = 1
+        System.out.println(result); // 6
+        int result2 = a | b;  //0101 0011 0111 = 7
+        System.out.println(result2);
+        System.out.println(0b0111);
     }
 }
